@@ -69,7 +69,7 @@ def calculate_total_expenses(expenses):
 def calculate_savings(income, expenses):
     savings = income - expenses
     if savings < 0:
-        return 0
+        return 0  # Adjust savings to zero if expenses exceed income
     return savings
 
 def track_single_month():
@@ -105,4 +105,4 @@ def main():
                 break
 
 if __name__ == "__main__":
-    main() 
+    main()
